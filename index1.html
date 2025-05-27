@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div
+      id="div"
+      style="
+        display: flex;
+        height: 100vh;
+        background-color: gray;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      "
+    >
+      <div
+        class="bg-gray-500"
+        style="height: 350px; border-radius: 2px; padding: 50px"
+      >
+        <i
+          id="i"
+          class="fas fa-lightbulb"
+          style="
+            font-size: 200px;
+            display: flex;
+            align-items: center;
+            margin-top: 12px;
+            justify-content: center;
+          "
+        ></i>
+        <h1
+          id="h1"
+          style="
+            border: 2px solid black;
+            margin: 12px;
+            border-radius: 4px;
+            color: white;
+            text-align: center;
+            height: 50px;
+            width: 110px;
+            cursor: pointer;
+            background-color: black;
+            padding: 12px;
+          "
+        >
+          Click Me
+        </h1>
+        <script>
+          // function= code on demand
+          function add() {
+            const h1 = document.getElementById("h1");
+            const i = document.getElementById("i");
+            setInterval(() => {
+              i.classList.toggle("text-yellow-300");
+            }, 1000);
+          }
+          add();
+          // switch
+          let s = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+          switch (length === 8) {
+            case s.length === 8:
+              console.log("Hello");
+              break;
+            case s.length === 7:
+              console.log("How are you");
+              break;
+            default:
+              console.log("Are you fine");
+          }
+          // if statement
+          let d = 50;
+          let f = 60;
+          if (d < f) {
+            console.log("don't Biz biz");
+          } else {
+            console.log("Hello");
+          }
+          let w = "ali";
+          let j = "Mohammad";
+          if (w >= j) {
+            console.log("how are you");
+          } else {
+            console.log("good bye");
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
